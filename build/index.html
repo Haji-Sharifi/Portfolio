@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth focus:scroll-auto duration-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustafa Sharifi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+  <body class="w-h-screen lg:overflow-x-hidden sm:overflow-x-hidden md:overflow-x-hidden bg-bg font-mono ">
+    <header
+      class="bg-none text-white top-0 z-10 h-screen w-max"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(img/background.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 150vh;
+      "
+      id="home"
+    >
+      <section
+        class="w-screen h-screen mx-auto flex justify-center items-start relative"
+      >
+           
+            <nav class="top-0 z-10 w-full h-16 text-xl text-white justify-center lg:flex items-center bg-center transition ease-in-out duration-300 space-x-8 p-0 m-0 hidden">
+                <div class="max-w-7xl mx-auto flex justify-between items-center">
+                 
+                <div class="flex justify-center items-center gap-12 font-thin">
+                    <a class="hover:text-text-color" href="#home">Home</a>
+                    <a class="hover:text-text-color" href="#Portfolio">Portfolio</a>
+                    <a class="hover:text-text-color" href="#Resume">Resume</a>
+                    <a class="hover:text-text-color" href="#About">About</a>
+                    <a class="hover:text-text-color" href="#Contact">Contact</a>
+                </div>
+            </nav>
+
+
+            <nav class="top-0 z-10 w-full h-16 text-xl text-white justify-between items-center lg:hidden block fixed">
+                <div class="flex justify-between items-center px-4 w-full h-14 bg-white">
+                    <!-- Hamburger Menu Button -->
+                    <button id="hamburger" type="button" class="p-2 text-gray-500 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-300 transition duration-200 ease-in-out" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="hamburger-open" class="block h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="hamburger-close" class="hidden h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                
+                <div id="mobile-menu" class="lg:hidden top-16 left-0 w-full hidden bg-white -mt-2 ">
+                    <div class="flex flex-col items-center space-y-4 pt-4 pb-6 bg-opacity-0 transition duration-300 ease-in-out">
+                      
+                        <a href="#home" class="block text-lg text-p-color hover:text-text-color transition duration-200 ease-in-out">Home</a>
+                        <a href="#Portfolio" class="block text-lg text-p-color hover:text-text-color transition duration-200 ease-in-out">Portfolio</a>
+                        <a href="#Resume" class="block text-lg text-p-color hover:text-text-color transition duration-200 ease-in-out">Resume</a>
+                        <a href="#About" class="block text-lg text-p-color hover:text-text-color transition duration-200 ease-in-out">About</a>
+                        <a href="#Contact" class="block text-lg text-p-color hover:text-text-color transition duration-200 ease-in-out">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+           
+ 
+        <div
+          class="md:flex flex-col mx-5 absolute justify-center items-center bg-none sm: text-1xl"
+        >
+          <h1 class="text-gray-300 text-6xl mt-96 text-center">Hello, I'm</h1>
+
+          <br />
+          <h1 class="md:flex text-center text-white text-8xl font-bold">
+            Mustafa Sharifi
+          </h1>
+          <h4 class="md:flex text-2xl text-center text-gray-500">
+            and this is My Résumé
+          </h4>
+        </div>
+      </section>
+    </header>
+
+    <!-- Container section -->
+
+    <section
+      id="Portfolio"
+      class="bg-bg flex flex-col justify-center items-center w-full h-auto pt-20"
+    >
+      <h1 class="text-white text-4xl font-light">
+        Featured <span class="text-4xl font-bold">Portfolio</span>
+      </h1>
+
+      <ul
+        class="flex text-gray-400 justify-center items-center sm: mx-20 pt-16 gap-5 flex-wrap text-wrap"
+      >
+        <li>
+          <a href="#">All</a>
+        </li>
+        <li>
+          <a href="#">Packaging</a>
+        </li>
+        <li>
+          <a href="#">Mockup</a>
+        </li>
+        <li>
+          <a href="#">Typography</a>
+        </li>
+        <li>
+          <a href="#">Photography</a>
+        </li>
+      </ul>
+      <main>
+        <div
+          class="md:flex justify-center items-center text-center p-4 mt-20 gap-y-10 gap-4 flex-wrap"
+        >
+          <div>
+            <img src="img/p1.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">
+              Square Box Mockup
+            </h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >Mockup</span
+            >
+          </div>
+          <div>
+            <img src="img/p2.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">
+              Square Box Mockup
+            </h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >Mockup</span
+            >
+          </div>
+          <div>
+            <img src="img/p3.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">
+              Square Box Mockup
+            </h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >Mockup</span
+            >
+          </div>
+          <div>
+            <img src="img/p4.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">Packaging Brand</h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >Packaging</span
+            >
+          </div>
+          <div>
+            <img src="img/p5.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">
+              Isometric 3D Extrusion
+            </h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >Typography</span
+            >
+          </div>
+          <div>
+            <img src="img/p6.jpg" alt="" />
+            <h2 class="text-white font-normal m-4 text-2xl">
+              White Space Photography
+            </h2>
+            <span class="text-white font-light text-xs uppercase -pt-4"
+              >photography</span
+            >
+          </div>
+        </div>
+      </main>
+
+      <!-- the Resume section -->
+      <div class="container" id="Resume">
+        <div class="flex justify-center text-center mt-36 p-10">
+          <h1 class="text-white text-4xl">
+            My <span class="font-bold text-4xl">Resume</span>
+          </h1>
+        </div>
+
+        <main>
+          <div class="flex flex-col items-center px-4 md:px-8 lg:px-48 py-10">
+            <div class="flex flex-col md:flex-row w-full space-y-8 md:space-y-0 md:space-x-8">
+              
+              <!-- Education Section -->
+              <div class="w-full md:w-1/2 space-y-4 p-4">
+                <h1 class="text-white text-2xl">Education</h1>
+                
+                
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Master's in Information Technology</h2>
+                  <p class="text-gray-300">Even the all-powerful Pointing has no control over the blind texts; it is almost unorthographic.</p>
+                  <p class="text-gray-400 mt-4">New York University</p>
+                </div>
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Master's in Information Technology</h2>
+                  <p class="text-gray-300">Even the all-powerful Pointing has no control over the blind texts; it is almost unorthographic.</p>
+                  <p class="text-gray-400 mt-4">New York University</p>
+                </div>
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Master's in Information Technology</h2>
+                  <p class="text-gray-300">Even the all-powerful Pointing has no control over the blind texts; it is almost unorthographic.</p>
+                  <p class="text-gray-400 mt-4">New York University</p>
+                </div>
+                
+                
+              </div>
+        
+              <!-- Experience Section -->
+              <div class="w-full md:w-1/2 space-y-4 p-4">
+                <h1 class="text-white text-2xl">Experience</h1>
+               
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Software Developer</h2>
+                  <p class="text-gray-300">Engaged in various projects involving full-stack development and cloud integration.</p>
+                  <p class="text-gray-400 mt-4">Tech Company</p>
+                </div>
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Software Developer</h2>
+                  <p class="text-gray-300">Engaged in various projects involving full-stack development and cloud integration.</p>
+                  <p class="text-gray-400 mt-4">Tech Company</p>
+                </div>
+                <div class="bg-box-color p-6 rounded-lg shadow-md text-left">
+                  <p class="text-white">March 2013 - Present</p>
+                  <h2 class="text-text-color text-xl mb-2">Software Developer</h2>
+                  <p class="text-gray-300">Engaged in various projects involving full-stack development and cloud integration.</p>
+                  <p class="text-gray-400 mt-4">Tech Company</p>
+                </div>
+                
+               
+              </div>
+            </div>
+          </div>
+        </main>
+        
+      </div>
+    </section>
+    <section class="flex flex-col mt-10 md:flex-row items-center md:items-start md:p-12 " id="About">
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 h-auto flex justify-center md:justify-end md:ml-10  mb-6 md:mb-0">
+        <div class="w-11/12 sm:w-3/4 md:w-auto px-4 md:px-0 md:pt-10 lg:ml-32">
+          <img src="img/bg.jpg" alt="Background Image" class="rounded-lg shadow-lg"/>
+        </div>
+      </div>
+    
+      <!-- About Me Text Section -->
+      <div class="w-full md:w-1/2 container mx-auto p-4 md:p-6" >
+        <div class="text-left">
+          <h1 class="text-3xl font-normal text-white mb-4">
+            About <span class="font-bold text-white">Me</span>
+          </h1>
+          <p class="text-p-color text-lg mb-6">
+            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          </p>
+          <p class="text-p-color text-base mb-6">
+            A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-text-color hover:bg-btn-color text-white font-semibold py-2 px-4 rounded">
+              Hire Me
+            </button>
+            <button class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-p-color hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">
+              Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-bg container">
+      <main class="flex flex-col md:flex-row">
+        <div class="w-screen justify-center text-center mt-36">
+          <h1 class="text-white text-3xl font-thin">
+            Client <span class="font-bold">Testimonial</span>
+          </h1>
+        </div>
+      </main>
+      <!-- 
+       -->
+      <!--  -->
+      <div class="container mx-auto px-4 h-auto my-20 ">
+        <div
+          class="space-y-5 md:flex md:space-x-5 md:space-y-5 md:justify-center items-center text-center md:flex-wrap gap-5"
+        >
+          <!-- First Blockquote-->
+          <div
+            class="w-full md:w-1/2 lg:w-4/12 flex flex-col items-center space-y-4 md:ml-4"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="img/person_1.jpg"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full"
+              />
+              <blockquote
+                class="bg-box-color rounded-lg text-p-color p-6 w-full"
+              >
+                <p>
+                  &ldquo;Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                  Separated they live in Bookmarksgrove right at the coast of
+                  the Semantics, a large language ocean.&rdquo;
+                </p>
+                <cite class="block mt-4 text-right text-sm">
+                  &mdash; Craig Gowen, CEO
+                  <a class="text-text-color" href="#">XYZ Inc.</a>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Second Blockquote -->
+          <div
+            class="w-full md:w-1/2 lg:w-4/12 flex flex-col items-center space-y-4"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="img/person_2.jpg"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full"
+              />
+              <blockquote
+                class="bg-box-color rounded-lg text-p-color p-6 w-full"
+              >
+                <p>
+                  &ldquo;Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                  Separated they live in Bookmarksgrove right at the coast of
+                  the Semantics, a large language ocean.&rdquo;
+                </p>
+                <cite class="block mt-4 text-right text-sm">
+                  &mdash; Craig Gowen, CEO
+                  <a class="text-text-color" href="#">XYZ Inc.</a>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Third Blockquote -->
+          <div
+            class="w-full md:w-1/2 lg:w-4/12 flex flex-col items-center space-y-4"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="img/person_3.jpg"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full"
+              />
+              <blockquote
+                class="bg-box-color rounded-lg text-p-color p-6 w-full"
+              >
+                <p>
+                  &ldquo;Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                  Separated they live in Bookmarksgrove right at the coast of
+                  the Semantics, a large language ocean.&rdquo;
+                </p>
+                <cite class="block mt-4 text-right text-sm">
+                  &mdash; Craig Gowen, CEO
+                  <a class="text-text-color" href="#">XYZ Inc.</a>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Fourth Blockquote -->
+          <div
+            class="w-full md:w-1/2 lg:w-4/12 flex flex-col items-center space-y-4"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="img/person_4.jpg"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full"
+              />
+              <blockquote
+                class="bg-box-color rounded-lg text-p-color p-6 w-full"
+              >
+                <p>
+                  &ldquo;Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                  Separated they live in Bookmarksgrove right at the coast of
+                  the Semantics, a large language ocean.&rdquo;
+                </p>
+                <cite class="block mt-4 text-right text-sm">
+                  &mdash; Craig Gowen, CEO
+                  <a class="text-text-color" href="#">XYZ Inc.</a>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+    </section>
+
+    <section class="container">
+      <main class="flex flex-col items-center mt-36 mb-8">
+        <h1 class="text-white text-3xl font-thin text-center">My <span class="font-bold">Services</span></h1>
+      </main>
+      
+      <section class="w-full flex justify-center py-10 bg-dark">
+        <div class="flex flex-col md:flex-row md:justify-center md:ml-10 w-full max-w-5xl gap-8 px-4">
+          
+          <!-- Web Design Box -->
+          <div class="flex flex-col justify-center items-center text-center bg-box-color py-10 px-6 rounded-md w-full md:w-1/3">
+            <div class="icon bg-icon-color mb-4 rounded-full flex items-center justify-center w-20 h-20 bg-white">
+              <img src="img/Web icon.svg" class="w-12" alt="Web Design Icon">
+            </div>
+            <h1 class="text-xl text-white">Web Design</h1>
+            <p class="text-sm text-p-color mt-4">
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+              the Semantics, a large language ocean.
+            </p>
+            <a href="#" class="text-text-color mt-6 hover:-translate-y-2 duration-300">Learn More &gt;</a>
+          </div> 
+    
+          <!-- SEO Box -->
+          <div class="flex flex-col justify-center items-center text-center bg-box-color py-10 px-6 rounded-md w-full md:w-1/3">
+            <div class="icon bg-icon-color mb-4 rounded-full flex items-center justify-center w-20 h-20 bg-white">
+              <img src="img/Web icon.svg" class="w-12" alt="SEO Icon">
+            </div>
+            <h1 class="text-xl text-white">Search Engine Optimization</h1>
+            <p class="text-sm text-p-color mt-4">
+              A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+            <a href="#" class="text-text-color mt-6 hover:-translate-y-2 duration-300">Learn More &gt;</a>
+          </div> 
+    
+          <!-- Video Editing Box -->
+          <div class="flex flex-col justify-center items-center text-center bg-box-color py-10 px-6 rounded-md w-full md:w-1/3">
+            <div class="icon bg-icon-color mb-4 rounded-full flex items-center justify-center w-20 h-20 bg-white">
+              <img src="img/Web icon.svg" class="w-12" alt="Video Editing Icon">
+            </div>
+            <h1 class="text-xl text-white">Video Editing</h1>
+            <p class="text-sm text-p-color mt-4">
+              Even the all-powerful Pointing has no control over the blind texts. One day, however, a small line of blind text decided to leave for the far World of Grammar.
+            </p>
+            <a href="#" class="text-text-color mt-6 hover:-translate-y-2 duration-300">Learn More &gt;</a>
+          </div>
+        </div>
+      </section>
+    
+      <section class="container justify-center text-center my-12 py-20">
+        <h1 class="text-3xl font-normal text-center text-white">Blog on <span class="font-bold">Medium</span></h1>
+      </section>
+      
+      <section class="w-full flex justify-center py-10 gap-8 flex-wrap md:flex-wrap">
+        <!-- Blog Post 1 -->
+        <div class="flex flex-col justify-center w-full md:w-1/3 max-w-xs gap-5 bg-box-color hover:-translate-y-2 duration-300 pb-5">
+          <img src="img/post_1.jpg" class="w-full -mt-5 ">          
+          <h1 class="text-white text-2xl px-5 ">Creative Product Designer From Facebook</h1>
+          <p class="text-p-color px-5 ">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic. </p>
+          <span>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">Aug 7, 2018</a>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">5 Comments</a>
+          </span>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="flex flex-col justify-center w-full md:w-1/3 max-w-xs gap-5 bg-box-color hover:-translate-y-2 duration-300 pb-5">
+          <img src="img/post_2.jpg" class="w-full -mt-5 ">          
+          <h1 class="text-white text-2xl px-5 ">Creative Product Designer From Facebook</h1>
+          <p class="text-p-color px-5 ">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic. </p>
+          <span>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">Aug 7, 2018</a>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">5 Comments</a>
+          </span>
+        </div>   
+        
+        <!-- Blog Post 3 -->
+        <div class="flex flex-col justify-center w-full md:w-1/3 max-w-xs gap-5 bg-box-color hover:-translate-y-2 duration-300 pb-5">
+          <img src="img/post_3.jpg" class="w-full -mt-5 ">          
+          <h1 class="text-white text-2xl px-5 ">Creative Product Designer From Facebook</h1>
+          <p class="text-p-color px-5 ">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic. </p>
+          <span>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">Aug 7, 2018</a>
+            <a href="#" class="text-left m-4 text-p-color text-sm hover:text-text-color">5 Comments</a>
+          </span>
+        </div>
+      </section>
+      <section class="w-full px-4 md:px-10 lg:px-20">
+        <!-- Section Heading -->
+        <section class="flex flex-col items-center text-center py-8">
+            <h1 class="text-white text-2xl md:text-3xl font-normal">Get <strong>in touch</strong></h1>
+        </section>
+    
+        <!-- Main Content -->
+        <main class="flex flex-col lg:flex-row w-full space-y-8 lg:space-y-0 lg:space-x-8">
+            
+            <!-- Contact Form Section -->
+            <div class="flex justify-center w-full lg:w-1/2 p-5 lg:ml-32">
+                <div class="w-full lg:w-10/12">
+                    <h1 class="text-white text-2xl md:text-3xl lg:text-4xl text-left font-thin mb-6 lg:ml-10">Get In Touch</h1>
+                    <form class="flex flex-col text-white gap-y-5 ">
+                        <input type="text" required placeholder="Your Name" class="bg-box-color  w-full h-12 px-4 rounded-sm">
+                        <input type="email" required placeholder="Your Email" class="bg-box-color w-full h-12 px-4 rounded-sm">
+                        <input type="text" required placeholder="Your Phone" class="bg-box-color w-full h-12 px-4 rounded-sm">
+                        <textarea
+                            id="message"
+                            placeholder="Your message"
+                            required
+                            class="bg-box-color w-full h-48 md:h-64 px-4 py-2 rounded-sm text-lg"
+                        ></textarea>
+                        <div class="flex justify-center lg:justify-start">
+                            <button type="submit"
+                                class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 bg-text-color hover:bg-btn-color text-white font-semibold py-2 px-6 rounded-3xl"
+                            >Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Contact Details Section -->
+            <div class="w-full lg:w-1/2 flex flex-col text-start p-5 lg:p-7">
+                <h1 class="text-white text-2xl md:text-3xl font-thin mb-6">My Contact Details</h1>
+                <div class="text-left space-y-4">
+                    <div>
+                        <h1 class="text-cyan-950 text-lg font-mono">Email</h1>
+                        <p class="text-gray-500 text-lg font-mono">mustafasharifi1236@gmail.com</p>
+                    </div>
+                    <div>
+                        <h1 class="text-cyan-950 text-lg font-mono">Phone</h1>
+                        <p class="text-gray-500 text-lg font-mono">009377553150</p>
+                    </div>
+                    <div>
+                        <h1 class="text-cyan-950 text-lg font-mono">ZIP</h1>
+                        <p class="text-gray-500 text-lg font-mono">1007</p>
+                    </div>
+                    <div>
+                        <h1 class="text-cyan-950 text-lg font-mono">Address</h1>
+                        <p class="text-gray-500 text-lg font-mono">Kabul, Afghanistan<br> 8th Street<br>Qala-e-Fatahullah, #p-26</p>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </section>
+    
+    <footer class="flex flex-col items-center py-8 text-center pt-60">
+      <p class="col-12 text-center text-white">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>
+              document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | by
+          <a href="https://colorlib.com" target="_blank" class="text-text-color">Haji Mustafa Sharifi</a>
+      </p>
+      <div class="flex space-x-6 mt-5">
+        <a href="#" class="bg-box-color p-4 rounded-full hover:text-white">
+            <span class="flex">
+                <i class="fab fa-facebook text-lime-400 text-2xl"></i> <!-- Updated icon class -->
+            </span>
+        </a>
+        <a href="#" class="bg-box-color p-4 rounded-full hover:text-white">
+            <span class="flex">
+                <i class="fab fa-twitter text-lime-400 text-2xl"></i>
+            </span>
+        </a>
+        <a href="#" class="bg-box-color p-4 rounded-full hover:text-white">
+            <span class="flex">
+                <i class="fab fa-instagram text-lime-400 text-2xl"></i>
+            </span>
+        </a>
+        <a href="#" class="bg-box-color p-4 rounded-full hover:text-white">
+            <span class="flex">
+                <i class="fab fa-linkedin-in text-lime-400 text-2xl"></i>
+            </span>
+        </a>
+        <a href="#" class="bg-box-color p-4 rounded-full hover:text-white">
+            <span class="flex">
+                <i class="fab fa-vimeo-v text-lime-400 text-2xl"></i>
+            </span>
+        </a>
+    </div>
+  
+  </footer>
+    <script src="js/main.js" defer></script>
+    
+  </body>
+</html>
