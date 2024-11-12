@@ -9,10 +9,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
-
-
-
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobile-menu");
 const hamburgerOpen = document.getElementById("hamburger-open");
@@ -22,16 +18,28 @@ hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
     hamburgerOpen.classList.toggle("hidden");
     hamburgerClose.classList.toggle("hidden");
+
 });
 
 
-const mobile = document.querySelector("mobile-menu");
+// const mobile = document.getElementById("mobile-menu");
 
-window.addEventListener("scroll", function () {
+// window.addEventListener("scroll", function () {
 
-    if (window.scrollY > 300) {
-        mobile.classList.add("active");
-    } else {
-        mobile.classList.remove("active");
-    }
-});
+//     if (window.scrollY > 300) {
+//         mobile.classList.add("active");
+//     } else {
+//         mobile.classList.remove("active");
+//     }
+// });
+
+
+
+
+let close_one = document.querySelectorAll("#mobile-menu a")
+
+close_one.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+        mobileMenu.classList.toggle("hidden");
+    })
+})
