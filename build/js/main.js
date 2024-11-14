@@ -14,12 +14,22 @@ const mobileMenu = document.getElementById("mobile-menu");
 const hamburgerOpen = document.getElementById("hamburger-open");
 const hamburgerClose = document.getElementById("hamburger-close");
 
+
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
     hamburgerOpen.classList.toggle("hidden");
     hamburgerClose.classList.toggle("hidden");
-
 });
+
+
+document.querySelectorAll("#mobile-menu a").forEach(item => {
+    item.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden"); // ensure the menu hides
+        hamburgerOpen.classList.remove("hidden");
+        hamburgerClose.classList.add("hidden");
+    });
+});
+
 
 
 // const mobile = document.getElementById("mobile-menu");
@@ -36,10 +46,3 @@ hamburger.addEventListener("click", () => {
 
 
 
-let close_one = document.querySelectorAll("#mobile-menu a")
-
-close_one.forEach(function (item) {
-    item.addEventListener("click", function (e) {
-        mobileMenu.classList.toggle("hidden");
-    })
-})
